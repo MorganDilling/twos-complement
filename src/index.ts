@@ -25,8 +25,6 @@ const parseTwosComplement = (binary: Array<number>): number => {
     .map((bit) => bit)
     .reverse()
     .map((bit) => {
-      console.log(bit, oneFound);
-
       if (!oneFound) {
         if (bit === 1) oneFound = true;
         return bit;
